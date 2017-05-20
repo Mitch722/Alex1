@@ -51,7 +51,7 @@ class MainWindow:
 
 
     def onButton(self):
-        #self.page(root)
+        
         self.canvas.destroy()
         self.page(root)
         # next image
