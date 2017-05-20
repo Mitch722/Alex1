@@ -40,10 +40,10 @@ class MainWindow:
         self.canvas.grid(row=0, column=0)
 
         # images
-        self.my_images = img = ImageTk.PhotoImage(file = "test.gif")
+        self.my_images = img = ImageTk.PhotoImage(file = "ball1.gif")
 
         # set first image on canvas
-        self.image_on_canvas = self.canvas.create_image(0, 0, anchor = SW, image = self.my_images)
+        self.image_on_canvas = self.canvas.create_image(0, 0, anchor = NW, image = self.my_images)
 
         # button to change image
         self.button = Button(main, text="Change", command=self.onButton)
